@@ -27,4 +27,6 @@ void insertion_sort_list(listint_t **list);
 void quick_sort(int *array, size_t size);
 
 
+void swap(int *c, int *d);
+
 #endif /*SORT_H*/
