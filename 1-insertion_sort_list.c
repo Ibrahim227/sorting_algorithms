@@ -7,4 +7,18 @@
 */
 void insertion_sort_list(listint_t **list)
 {
+	int i, j, k;
+
+	for (i = 0; i < list; i++)
+	{
+		k = list[i];
+		j = k - 1;
+
+		while (j >= 0 && list[j] > k)
+		{
+			list[j + 1] = list[j];
+			j = j - 1;
+		}
+		list[j + 1] = k;
+	}
 }
