@@ -10,16 +10,16 @@ void insertion_sort_list(listint_t **list)
 	int i, j, k;
 	listint_t *lk = **list;
 
-	for (i = 0; i < list; i++)
+	for (i = 0; i < lk; i++)
 	{
-		k = list[i];
+		k = lk[i];
 		j = k - 1;
 
-		while (j >= 0 && list[j] > k)
+		while (j >= 0 && lk[j] > k)
 		{
-			list[j + 1] = list[j];
+			lk[j + 1] = lk[j];
 			j = j - 1;
 		}
-		list[j + 1] = k;
+		lk[j + 1] = k;
 	}
 }
