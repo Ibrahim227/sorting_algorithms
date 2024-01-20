@@ -41,5 +41,6 @@ void quick_sort(int *array, size_t size);
 
 
 void swap(int *c, int *d);
+void swap_nodes(listint_t **w, listint_t **a1, listint_t *a2);
 
 #endif /*SORT_H*/
