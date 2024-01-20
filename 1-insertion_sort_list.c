@@ -8,6 +8,7 @@
 void insertion_sort_list(listint_t **list)
 {
 	int i, j, k;
+	listint_t *lk = **list;
 
 	for (i = 0; i < list; i++)
 	{
