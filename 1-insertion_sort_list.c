@@ -10,7 +10,7 @@ void swap_nodes(listint_t **w, listint_t **a1, listint_t *a2)
 {
 	(*a1)->next = a2->next;
 	if (a2->next != NULL)
-		na->next->prev = *a1;
+		a2->next->prev = *a1;
 	a2->prev = (*a1)->prev;
 	a2->next = *a1;
 	if ((*a1)->prev != NULL)
