@@ -7,19 +7,19 @@
 */
 void insertion_sort_list(listint_t **list)
 {
-	int i, j, k;
-	listint_t *lk = **list;
+	listint_t *iter, *insert, *tmp;
 
-	for (i = 0; i < lk; i++)
+	if (list == NULL || *list == NULL || (*list)->next == NULL)
+		return;
+
+	for (iter = (*list)->next; iter != NULL; iter = tmp)
 	{
-		k = lk[i];
-		j = k - 1;
-
-		while (j >= 0 && lk[j] > k)
+		tmp = iter->next;
+		insert = iter->prev;
+		while (insert != NULL && iter->n < insert->n)
 		{
-			lk[j + 1] = lk[j];
-			j = j - 1;
+			swap_nodes(list, &insert, iter);
+			print_list((const listint_t *)*list);
 		}
-		lk[j + 1] = k;
 	}
 }
