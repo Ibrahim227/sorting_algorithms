@@ -42,5 +42,8 @@ void quick_sort(int *array, size_t size);
 
 void swap(int *c, int *d);
 void swap_nodes(listint_t **w, listint_t **a1, listint_t *a2);
-
+void swap(int *c, int *d);
+int lomuto_partition(int *array, size_t size, int left, int right);
+void lomuto_sort(int *array, size_t size, int left, int right);
+void quick_sort(int *array, size_t size);
 #endif /*SORT_H*/
