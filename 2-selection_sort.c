@@ -6,11 +6,11 @@
 * @yp: int
 * Return: array
 */
-void swap(int *xp, int *yp) 
-{ 
-	int temp = *xp; 
-	*xp = *yp; 
-	*yp = temp; 
+void swap(int *xp, int *yp)
+{
+	int temp = *xp;
+	*xp = *yp;
+	*yp = temp;
 }
 /**
 * selection_sort - sorts an array of int
