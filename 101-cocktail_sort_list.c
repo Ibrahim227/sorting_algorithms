@@ -4,15 +4,15 @@
  * swap - Swap two integers in an array.
  * @c: The first integer to swap.
  * @d: The second integer to swap.
-* Return: sorted list
+*  Return: sorted list
  */
 void swap(int *c, int *d)
 {
-        int tmp;
+	int tmp;
 
-        tmp = *c;
-        *c = *d;
-        *d = tmp;
+	tmp = *c;
+	*c = *d;
+	*d = tmp;
 }
 
 /**
