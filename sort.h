@@ -49,6 +49,8 @@ void quick_sort(int *array, size_t size);
 
 void shell_sort(int *array, size_t size);
 void swap(int *c, int *d);
+void cocktail_sort_list(listint_t **list);
+void swap(int *c, int *d);
 
 
 
