@@ -9,17 +9,20 @@
 void shell_sort(int *array, size_t size)
 {
 	int gap;
+	size_t s;
+	int arr;
 
 	for (gap = size/2; gap > 0; gap /= 2)
 	{
-		for (int i = gap; i < size; i += 1)
+		int i;
+		for (i = gap; i < s; i += 1)
 		{
-			int temp = array[i];
+			int temp = arr[i];
 
 			int j;
-			for (j = i; j >= gap && array[j - gap] > temp; j -= gap)
-				array[j] = array[j - gap];
-			array[j] = temp;
+			for (j = i; j >= gap && arr[j - gap] > temp; j -= gap)
+				arr[j] = arr[j - gap];
+			arr[j] = temp;
 		}
 	}
 	return (0);
