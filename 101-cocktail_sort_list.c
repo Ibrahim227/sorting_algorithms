@@ -22,10 +22,10 @@ void swap(int *c, int *d)
 */
 void cocktail_sort_list(listint_t **list)
 {
-	listint_t i, len = size;
+	listint_t i, len = list;
 	bool bubble = false;
 
-	if (array == NULL || size < 2)
+	if (array == NULL || list < 2)
 		return;
 
 	while (bubble == false)
@@ -36,10 +36,10 @@ void cocktail_sort_list(listint_t **list)
 			if (array[i] > array[i + 1])
 			{
 				swap(array + i, array + i + 1);
-				print_array(array, size);
+				print_array(array, list);
 				bubble = false;
 			}
 		}
-		len--;
+		len++;
 	}
 }
