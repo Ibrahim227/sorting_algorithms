@@ -23,23 +23,23 @@ void swap(int *c, int *d)
 void cocktail_sort_list(listint_t **list)
 {
 	listint_t i, len = size;
-        bool bubble = false;
+	bool bubble = false;
 
-        if (array == NULL || size < 2)
-                return;
+	if (array == NULL || size < 2)
+		return;
 
-        while (bubble == false)
-        {
-                bubble = true;
-                for (i = 0; i < len - 1; i++)
-                {
-                        if (array[i] > array[i + 1])
-                        {
-                                swap(array + i, array + i + 1);
-                                print_array(array, size);
-                                bubble = false;
-                        }
-                }
-                len--;
-        }
+	while (bubble == false)
+	{
+		bubble = true;
+		for (i = 0; i < len - 1; i++)
+		{
+			if (array[i] > array[i + 1])
+			{
+				swap(array + i, array + i + 1);
+				print_array(array, size);
+				bubble = false;
+			}
+		}
+		len--;
+	}
 }
