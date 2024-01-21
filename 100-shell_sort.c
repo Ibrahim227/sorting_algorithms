@@ -10,7 +10,7 @@ void shell_sort(int *array, size_t size)
 {
 	int gap;
 	size_t s;
-	int arr[] = *array;
+	int *arr = *array;
 
 	for (gap = size/2; gap > 0; gap /= 2)
 	{
