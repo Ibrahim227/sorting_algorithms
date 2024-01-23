@@ -1,2 +1,2 @@
 #Team Project: 
-Ibrahim Ibrahim ; and
+Ibrahim Ibrahim ; and Gigi Ivy
